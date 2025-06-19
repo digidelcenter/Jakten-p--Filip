@@ -1,0 +1,23 @@
+.btn-primary{
+	background-color: #b0ca3c;
+}
+
+#services{
+	background-color: #b0ca3c;
+	color: white;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+}
+
+#services img{
+	max-width: 100%;
+}
+
+header.masthead {
+    background-image: url("../img/hej2.png");
+}
+
+

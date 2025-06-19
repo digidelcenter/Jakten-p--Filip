@@ -1,0 +1,336 @@
+<!--
+OM TEKNIKJAKTEN
+==========================================================
+Teknikjakten är inspirerad av escape rooms och skapades som en del 
+av projektet Mer för fler som Umeå kommuns bibliotek deltog i 2018. 
+Projektgruppen bestod av sex personer från olika bibliotek som gick 
+en metodutbildning, SKL:s Innovationsguiden.
+
+Du kan hitta mer information om detta projekt på följande plats
+
+www.minabibliotek.se/merforfler
+
+SKAPA EGNA JAKTER
+==========================================================
+Denna version av teknikjakten är en mall framtagen för att det skall vara
+enkelt att skapa egna teknikjakter.
+kunna skapa egna "teknikjakter".
+
+Ett exempel på teknikjakt kan hittas på:
+
+www.itbib.se/teknikjakten
+
+LICENS OCH MALL
+==========================================================
+Teknikjakten är byggd med hjälp av ett javascript ramverk som heter 
+Twitter bootstrap och en tema som heter Agency.
+Temat kan hittas på följande sida.
+
+https://startbootstrap.com/themes/agency/
+
+Eller här:
+
+https://github.com/BlackrockDigital/startbootstrap-agency
+
+Mallen Agency använder sig av en licens som heter "The MIT License".
+Det innebär följande
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+SLUT PÅ KOMMENTARER
+==========================================================
+-->
+
+<!--SÅ GÖR DU För att skapa en egen teknikjakt behöver du ändra vissa delar i detta dokument
+sådana platser är märkta med texten ÄNDRA. Läs kommentarerna eller använd sökfunktionen
+ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
+
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!--
+  # Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
+  # EX: <title>Ett helt eget namn</title>
+  # Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
+  # webbsidans flik/tabb har då du du surfar till sidan.
+  # 
+  -->
+
+    <title>Stadsbibliotekets Skattjakt!</title>
+
+  <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
+  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+
+  <body id="page-top">
+  <!-- Denna del av koden berättar vad menyn skall innehålla -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.itbib.se/teknikjakten/#page-top">
+        Hjälp Bonden att hitta Filip!
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./om.html">Så använder du
+             teknikjakten</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./om.html">Om teknikjakten</a>
+            </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+
+    <!--FÖRSTA DELEN SOM INTRODUCERAR JAKTEN STARTAR-->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+        <div class="intro-heading text-uppercase">FILIP PÅ RYMMEN!</div>
+          <div class="intro-lead-in">Är Du Modig Nog För Att Hjälpa Bonden?</div>
+          
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">
+          Starta jakten!
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">𝖨𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇 𝖨𝗇𝗇𝖺𝗇 𝖭𝗂 𝖯å𝖻ö𝗋𝗃𝖺𝗋 𝖩𝖺𝗄𝗍𝖾𝗇!</h2>
+            <h3 class="section-subheading "></h3>
+
+            <h3>TIPS!</h3>
+            <p>Titta dig noga för innan du går över en väg</p>
+
+            <p>Använd dig av övergångsställen</p>
+
+            <p>Släng inget skräp, vi ska lämna stan lika fin som vi hittade den</p>
+
+            <p>Skattjakten har inte någon begränsad tid, så stressa inte</p>
+
+            <p>Det viktigaste är att ni har roligt!</p>
+
+            <!--Ibland kanske du vill lägga till en bild i beskrivningen.
+            I så fall läger du in bilden i katalogen img.
+            Du lägger sedan in följande kod för att berätta att en bild skall visas.
+            Men ersätter bildensnamn med det namn din bild och det filformat din bild har.
+
+            EX:
+            <img src="./img/bildensnamn.filformat">
+            T.ex: <img src="./img/coolbild.jpeg">-->
+      
+            <h3>HUR FUNGERAR JAKTEN?</h3>
+
+            <P>Svara rätt på frågan för att komma vidare</P>
+
+            <p>Det finns vägbeskrivning till alla gåtor</p>
+
+            <p>Jakten består av 6 delar</p>
+
+            <p>Gåsträckan är 2km</p>
+
+            <p>Det tar 30 min att göra klart jakten</p>
+
+            <p>När du är klar med jakten väntar ett pris på dig stadsbibloteket!</p>
+
+            <h3>Historian om hur Filip försvan</h3>
+
+            <p>Denna jakt handlar om en bonde som har tappat bort sin katt Filip. Katten Filip hade valt att springa hemifrån och gömma sig i den lilla staden karlskrona. När bonden vaknade upp samma morgon insåg han att Filip var borta. Vart kunde han tagit vägen frågade han sig själv, det fanns många frågor men inga svar och bonden visste inte vad han skulle göra. Men det finns fortfarande hopp, nu är det upp till er att hjälpa honom!
+              <img src="./img/karta.png">
+
+              <p></p>
+              
+              <img src="./img/Klocktornet.jpeg">
+          
+            </p>
+
+            <a href="https://www.google.com/maps/dir/Karlskrona+stadsbibliotek,+Stortorget,+Karlskrona/Amiralitetsklockstapeln/@56.1602761,15.5884932,17z/data=!4m24!4m23!1m15!1m1!1s0x46566dab4a314469:0x91d250e6860146bd!2m2!1d15.5851189!2d56.1606425!3m4!1m2!1d15.5850591!2d56.160794!3s0x46566dab354e4c25:0x1205379373fa1c8f!3m4!1m2!1d15.5855307!2d56.1593808!3s0x46566dab22b29aa5:0x70869671f90a7dd8!1m5!1m1!1s0x46566daafc3e8b23:0xa32969fb899e24ce!2m2!1d15.5863308!2d56.1583112!3e2?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" style="font-weight: bold">
+                  Vägbeskrivning till Amiralitetsklockstapeln
+              </a>
+
+            <br />
+            <br />
+            <h3></h3>
+            <!--Här nedan beskriver du vad uppdraget skall vara-->
+            <p> Bonden fick höra att Filip hade klättrat upp på gula klocktornet. Hemma brukar Filip alltid klätra upp i höga träd för att se den fina utsikten över landet.
+
+            <p> </p> 
+            <h3>Uppdrag 1</h3> 
+
+            <p>Vilken flagga sitter på toppen av gula klocktornet?</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+    
+    <!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+      <!--Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
+      Just nu är det sidan som heter 2.html som skall laddas.
+      Om vi istället skulle arbeta med uppdrag 2 just så och ändra i filen 2.html skulle vi då alltså
+      istället låta det stå "./3.html" eftersom det då är den sidan som borde laddas.
+
+      Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
+      så många uppdrag vi vill.
+      -->
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" 
+            action="./2.html" 
+            onsubmit="return validateForm()" autocomplete="off">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+                </div>
+              </div>
+            
+          </div></form>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">
+              <a href="https://bibliotek.karlskrona.se/" style="font-weight: bold">
+                  Biblioteken i Karlskrona
+              </a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Filer som denna mall använder läses in, du behöver inte ändra något här.-->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/agency.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+    <!--I DENNA DEL BERÄTTAR DU VAD SOM ÄR RÄTT SVAR-->
+    <script>
+    function validateForm() {
+
+      //Det använder skriver i rutan hämtas in och sparas i en variabel som heter answer.
+      //det man skrivit in i rutan konverteras automatiskt till gemener.
+      //Skriver någon in MeDDelande och då använder versaler kommer texten som sparas att ändå att bli meddelande.
+      //Det gör det lättare att berätta vilket alteranativ som är rätt eftersom
+      //vi inte behöver ta hänsyn till gemenser/versaler.
+      var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
+      
+      /*Genom att ändra det som står mellan dessa tecken "" kan du välja vad som är rätt svar 
+      Viktigt! Skriv svaret med små bokstäver.
+
+      EX: if (answer == "mittsvar")
+
+      Om man nu skriver in mittsvar i rutan kommer man vidare.
+      
+      Finns det fler än ett rätt svar? 
+
+      Genom att lägga till följande tecken || (markera texten och kopiera 
+      eller tryck alt-gr samtidigt som du trycker på tangenten till höger om shift)
+      så kan du lägga till fler alternativ som är rätt.
+
+      EX: Med två räta svar
+
+      if (answer == "svar1" || answer == "svar2" )
+      
+      EX: Med tre rätta svar
+
+      if (answer == "svar1" || answer == "svar2" answer == "svar3" )
+      */
+
+      if (answer == "svenska flaggan"||answer == "sverige"||answer == "sveriges flagga"||answer == "svenska") {  /*Kom ihåg att svaret skall skrivas med gemener*/
+          return true;
+      }else{
+        document.getElementById("answer").value ="";
+        document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
+        return false;
+      }
+    }
+  </script>
+
+  <!--GRATTIS! Du har nu gjort startsidan för din egen teknikjakt! Testa att dubbelklicka på denna fil
+  index.html för att visa sidan i din webbläsare. Fungerar inte  det kan du högerklicka på filen och välja öppna med. Där borde du kunna hitta någon webbläsare som alternativ
+
+  EX: Internet Explorer, Edge, Firefox, Chrome
+
+  Det är nu dags att öppna sidan som heter 2.html och följa instruktionerna där.
+  -->
+</body>
+</html>
